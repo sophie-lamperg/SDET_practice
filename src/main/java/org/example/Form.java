@@ -1,15 +1,15 @@
 package org.example;
 
+import jdk.jfr.Description;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.Random;
 
+@Description("This test fills out the form and submits it, then checks if the confirmation modal displays correct data.")
 public class Form {
     private WebDriver driver;
     private WebDriverWait wait;
